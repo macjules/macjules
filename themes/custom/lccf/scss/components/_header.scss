@@ -1,0 +1,76 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+
+  &.lccf-header {
+    background-color: $lccf-blue;
+    color: $lccf-white;
+  }
+
+  .branding-header {
+    background-color: rgb(12, 122, 184);
+    display: block;
+    float: left;
+    left: 1rem;
+    padding: 0.5rem;
+    position: fixed;
+    top: 6rem;
+    z-index: 9;
+
+    img {
+      height: 20rem;
+      margin: 0;
+    }
+  }
+}
+
+.menu-main {
+  position: relative;
+
+  .nav-item {
+    padding-right: 1rem;
+
+    a, .active {
+      color: $lccf-white;
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+      display: inline-block;
+      position: relative;
+    }
+
+    a:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #0087ca;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    a:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    .nav-item a {
+      color: $lccf-black;
+    }
+  }
+}
+
+
+.menu-main-nav {
+  position: relative;
+  float: right;
+  margin-top: 2rem;
+
+  nav a.nav-link, nav a.nav-link.active {
+    color: $lccf-white;
+    text-transform: uppercase;
+  }
+}
