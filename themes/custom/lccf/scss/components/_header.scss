@@ -4,19 +4,22 @@ header {
   z-index: 99;
 
   &.lccf-header {
-    background-color: $lccf-blue;
+    background: rgb(12,122,184);
+    background: linear-gradient(90deg, rgba(12,122,184,0.99) 0%, rgba(9,20,128,1) 65%);
     color: $lccf-white;
   }
 
   .branding-header {
     background-color: rgb(12, 122, 184);
+    box-shadow: 0.2rem 0.2rem 0.5rem rgb(26, 18, 45);
     display: block;
     float: left;
-    left: 1rem;
+    left: 2rem;
     padding: 0.5rem;
     position: fixed;
-    top: 6rem;
+    top: 2.5rem;
     z-index: 9;
+    border-radius: 1rem;
 
     img {
       height: 20rem;
@@ -37,6 +40,7 @@ header {
       letter-spacing: 0.15rem;
       display: inline-block;
       position: relative;
+      font-weight: 700;
     }
 
     a:after {
@@ -60,6 +64,9 @@ header {
     .nav-item a {
       color: $lccf-black;
     }
+  }
+  .dropdown-item.active, .dropdown-item:hover {
+    background-color: transparent;
   }
 }
 

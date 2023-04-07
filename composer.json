@@ -22,10 +22,13 @@
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0",
         "drupal/core-vendor-hardening": "^10.0",
+        "drupal/dropzonejs": "^2.8",
+        "drupal/media_bulk_upload": "^3.0",
         "drupal/pathauto": "^1.11",
         "drupal/token": "^1.11",
         "drupal/webform": "^6.2@beta",
-        "drush/drush": "^11.5"
+        "drush/drush": "^11.5",
+        "enyo/dropzone": "^5.9"
     },
     "conflict": {
         "drupal/drupal": "*"

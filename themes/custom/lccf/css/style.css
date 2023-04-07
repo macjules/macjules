@@ -11725,18 +11725,21 @@ header {
   z-index: 99;
 }
 header.lccf-header {
-  background-color: rgb(42, 42, 89);
+  background: rgb(12, 122, 184);
+  background: linear-gradient(90deg, rgba(12, 122, 184, 0.99) 0%, rgb(9, 20, 128) 65%);
   color: rgb(250, 250, 250);
 }
 header .branding-header {
   background-color: rgb(12, 122, 184);
+  box-shadow: 0.2rem 0.2rem 0.5rem rgb(26, 18, 45);
   display: block;
   float: left;
-  left: 1rem;
+  left: 2rem;
   padding: 0.5rem;
   position: fixed;
-  top: 6rem;
+  top: 2.5rem;
   z-index: 9;
+  border-radius: 1rem;
 }
 header .branding-header img {
   height: 20rem;
@@ -11755,6 +11758,7 @@ header .branding-header img {
   letter-spacing: 0.15rem;
   display: inline-block;
   position: relative;
+  font-weight: 700;
 }
 .menu-main .nav-item a:after {
   content: "";
@@ -11775,6 +11779,9 @@ header .branding-header img {
 .menu-main .nav-item .nav-item a {
   color: rgb(5, 5, 5);
 }
+.menu-main .dropdown-item.active, .menu-main .media-library-view--widget .view-header a.dropdown-item.is-active, .media-library-view--widget .view-header .menu-main a.dropdown-item.is-active, .menu-main .dropdown-item:hover {
+  background-color: transparent;
+}
 
 .menu-main-nav {
   position: relative;
@@ -11784,6 +11791,58 @@ header .branding-header img {
 .menu-main-nav nav a.nav-link, .menu-main-nav nav .media-library-view--widget .view-header a, .media-library-view--widget .view-header .menu-main-nav nav a, .menu-main-nav nav a.nav-link.active {
   color: rgb(250, 250, 250);
   text-transform: uppercase;
+}
+
+main {
+  position: relative;
+  margin: 3rem 0 5rem;
+}
+main .lccf-content p {
+  font-size: 1.5rem;
+}
+main #block-lccf-local-tasks {
+  float: right;
+}
+
+footer {
+  background: rgb(12, 122, 184);
+  background: linear-gradient(90deg, rgba(12, 122, 184, 0.99) 0%, rgb(9, 20, 128) 65%);
+  color: rgb(250, 250, 250);
+}
+footer a, footer .active, footer .media-library-view--widget .view-header a.is-active, .media-library-view--widget .view-header footer a.is-active {
+  color: rgb(250, 250, 250);
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  display: inline-block;
+  position: relative;
+  font-weight: 700;
+  padding-left: 0 !important;
+}
+footer a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+footer a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+footer h5, footer .h5 {
+  font-weight: 800;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
+
+section.node .field--name-body {
+  padding: 4rem 0 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

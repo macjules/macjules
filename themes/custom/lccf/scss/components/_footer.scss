@@ -1,0 +1,40 @@
+footer {
+  background: rgb(12, 122, 184);
+  background: linear-gradient(90deg, rgba(12, 122, 184, 0.99) 0%, rgba(9, 20, 128, 1) 65%);
+  color: $lccf-white;
+
+  a, .active {
+    color: $lccf-white;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    display: inline-block;
+    position: relative;
+    font-weight: 700;
+    padding-left: 0 !important;
+  }
+
+  a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  h5 {
+    font-weight: 800;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+  }
+}

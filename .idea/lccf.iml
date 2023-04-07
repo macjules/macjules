@@ -79,6 +79,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/psr/log" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phootwork/collection" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phootwork/lang" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/enyo/dropzone" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

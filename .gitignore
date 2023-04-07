@@ -50,3 +50,4 @@ core/
 # IDE
 .lando*
 falses
+.idea
