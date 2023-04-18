@@ -93,6 +93,9 @@
       <path value="$PROJECT_DIR$/vendor/phootwork/collection" />
       <path value="$PROJECT_DIR$/vendor/phootwork/lang" />
       <path value="$PROJECT_DIR$/vendor/enyo/dropzone" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
     </include_path>
   </component>
   <component name="PhpInterpreters">

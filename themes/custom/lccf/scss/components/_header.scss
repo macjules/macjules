@@ -1,16 +1,24 @@
+.lccf-small-logo {
+  header .branding-header img {
+    height: 10rem;
+    transition: 0.35s;
+  }
+}
+
 header {
   position: fixed;
   width: 100%;
   z-index: 99;
 
   &.lccf-header {
-    background: rgb(12,122,184);
-    background: linear-gradient(90deg, rgba(12,122,184,0.99) 0%, rgba(9,20,128,1) 65%);
+    background: rgb(12, 122, 184);
+    background: linear-gradient(90deg, rgba(12, 122, 184, 0.99) 0%, rgba(9, 20, 128, 1) 65%);
     color: $lccf-white;
   }
 
   .branding-header {
     background-color: rgb(12, 122, 184);
+    border-radius: 1rem;
     box-shadow: 0.2rem 0.2rem 0.5rem rgb(26, 18, 45);
     display: block;
     float: left;
@@ -19,7 +27,6 @@ header {
     position: fixed;
     top: 2.5rem;
     z-index: 9;
-    border-radius: 1rem;
 
     img {
       height: 20rem;
@@ -36,24 +43,24 @@ header {
 
     a, .active {
       color: $lccf-white;
-      text-transform: uppercase;
-      letter-spacing: 0.15rem;
       display: inline-block;
-      position: relative;
       font-weight: 700;
+      letter-spacing: 0.15rem;
+      position: relative;
+      text-transform: uppercase;
     }
 
     a:after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      transform: scaleX(0);
-      height: 2px;
-      bottom: 0;
-      left: 0;
       background-color: #0087ca;
+      bottom: 0;
+      content: '';
+      height: 2px;
+      left: 0;
+      position: absolute;
+      transform: scaleX(0);
       transform-origin: bottom right;
       transition: transform 0.25s ease-out;
+      width: 100%;
     }
 
     a:hover::after {
@@ -65,6 +72,7 @@ header {
       color: $lccf-black;
     }
   }
+
   .dropdown-item.active, .dropdown-item:hover {
     background-color: transparent;
   }
@@ -72,9 +80,9 @@ header {
 
 
 .menu-main-nav {
-  position: relative;
   float: right;
   margin-top: 2rem;
+  position: relative;
 
   nav a.nav-link, nav a.nav-link.active {
     color: $lccf-white;

@@ -80,6 +80,9 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/phootwork/collection" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phootwork/lang" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/enyo/dropzone" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/common" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/event-manager" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/persistence" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

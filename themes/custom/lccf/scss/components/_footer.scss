@@ -5,25 +5,25 @@ footer {
 
   a, .active {
     color: $lccf-white;
-    text-transform: uppercase;
-    letter-spacing: 0.15rem;
     display: inline-block;
-    position: relative;
     font-weight: 700;
+    letter-spacing: 0.15rem;
     padding-left: 0 !important;
+    position: relative;
+    text-transform: uppercase;
   }
 
   a:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
     background-color: #0087ca;
+    bottom: 0;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
+    width: 100%;
   }
 
   a:hover::after {
@@ -32,9 +32,50 @@ footer {
   }
 
   h5 {
-    font-weight: 800;
     font-size: 1.6rem;
-    text-transform: uppercase;
+    font-weight: 800;
     padding-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  #block-views-block-sponsors-sponsors {
+    margin: 2rem 0 1rem;
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      padding-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
+#sliding-popup {
+  background: linear-gradient(90deg, rgba(12, 122, 184, 0.99) 0%, rgb(9, 20, 128) 65%);
+  border-top: 0.25rem $lccf-white solid;
+  font-size: 1.4rem;
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  #popup-buttons {
+    padding-top: 2rem;
+  }
+
+  .button {
+    height: 2.5rem;
+    width: 7.5rem;
+  }
+
+  .agree-button {
+    background: rgb(33, 121, 9);
+    background: linear-gradient(90deg, rgba(33, 121, 9, 1) 22%, rgba(153, 255, 0, 0.8281513288909313) 100%);
+    color: $lccf-white;
+  }
+
+  .decline-button {
+    background: rgb(121, 25, 9);
+    background: linear-gradient(243deg, rgba(121, 25, 9, 1) 22%, rgba(255, 117, 0, 0.8281513288909313) 100%);
+    color: $lccf-white;
   }
 }

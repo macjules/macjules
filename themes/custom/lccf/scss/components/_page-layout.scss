@@ -1,8 +1,23 @@
 main {
+  margin: 3rem 0 0;
   position: relative;
-  margin: 3rem 0 5rem;
+
+  .main-content-container {
+    background-color: rgba($lccf-white, 0.85);
+    position: relative;
+    top: -10rem;
+    z-index: 99;
+  }
+
+  .front-page .main-content-container {
+    position: relative;
+    top: 0;
+    z-index: 99;
+
+  }
+
   .lccf-content {
-    p {
+    p, li {
       font-size: 1.5rem;
     }
   }
@@ -13,4 +28,5 @@ main {
   }
 
 }
+
 
