@@ -1,0 +1,22 @@
+uuid: 328866e0-475e-474b-b4fd-68bd923ac998
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lccf
+_core:
+  default_config_hash: fCLJFWDBcgpM9muGJf3hOC8vQeIEuIyNtg2UKPr4wh4
+id: lccf_content
+theme: lccf
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

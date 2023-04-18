@@ -1,0 +1,22 @@
+uuid: 9014176d-bccf-43fa-a996-fde4226a3b63
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lccf
+_core:
+  default_config_hash: Gky8T1cuG5cElsipuk5DG-r1LfVHQ7b2FEEoRKLFAvA
+id: lccf_messages
+theme: lccf
+region: content
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

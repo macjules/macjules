@@ -1,0 +1,29 @@
+uuid: 419c6c98-3c64-4cde-b0d0-745a2709716f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.faq
+  module:
+    - system
+    - views
+  theme:
+    - lccf
+id: faq_block
+theme: lccf
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:faq-faq'
+settings:
+  id: 'views_block:faq-faq'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /contacts-and-help

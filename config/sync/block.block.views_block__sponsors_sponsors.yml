@@ -1,0 +1,24 @@
+uuid: 232f46f6-234f-4965-acc3-1a934bca4e9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sponsors
+  module:
+    - views
+  theme:
+    - lccf
+id: views_block__sponsors_sponsors
+theme: lccf
+region: footer
+weight: 0
+provider: null
+plugin: 'views_block:sponsors-sponsors'
+settings:
+  id: 'views_block:sponsors-sponsors'
+  label: 'Our sponsors'
+  label_display: visible
+  provider: views
+  views_label: 'Our sponsors'
+  items_per_page: none
+visibility: {  }

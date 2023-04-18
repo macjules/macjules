@@ -1,0 +1,22 @@
+uuid: 68dd53aa-16d3-4f5b-a90f-4008d742fd11
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - lccf
+_core:
+  default_config_hash: fuHYrpA1hYrwNsqSuG0ezZmRqfGzmW-VPGvKkqL0DR8
+id: lccf_help
+theme: lccf
+region: content
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

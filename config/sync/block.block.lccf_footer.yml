@@ -1,0 +1,27 @@
+uuid: fb75b508-4489-44e9-9fc7-57fd5edf0224
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - lccf
+_core:
+  default_config_hash: 7Dg7g4BB4fVkjewmVZ6Oo86j_Brdw5wxSfl6DLQatKc
+id: lccf_footer
+theme: lccf
+region: footer
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'More Info'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

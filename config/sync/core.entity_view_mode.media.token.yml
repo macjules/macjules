@@ -1,0 +1,10 @@
+uuid: caf5507d-8c14-4257-9254-7ee85699b9ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.token
+label: Token
+targetEntityType: media
+cache: true

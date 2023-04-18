@@ -1,0 +1,20 @@
+uuid: 7ac599f7-0c76-4808-9756-f39dbb0b388b
+langcode: en
+status: false
+dependencies:
+  theme:
+    - lccf
+_core:
+  default_config_hash: b_-m_Bfk1mLtMR0mknVVAyY42-vficPnNM_l5A7Q61I
+id: lccf_page_title
+theme: lccf
+region: content
+weight: 2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

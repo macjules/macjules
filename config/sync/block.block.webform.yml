@@ -1,0 +1,31 @@
+uuid: eadc1b59-1349-4494-9480-70f48c111864
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.car_boot_sale
+  module:
+    - system
+    - webform
+  theme:
+    - lccf
+id: webform
+theme: lccf
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Car Boot Sale form'
+  label_display: '0'
+  provider: webform
+  webform_id: car_boot_sale
+  default_data: ''
+  redirect: false
+  lazy: true
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /car-boot-sale

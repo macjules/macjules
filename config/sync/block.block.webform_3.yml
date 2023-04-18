@@ -1,0 +1,31 @@
+uuid: b3837889-b656-4bec-8c28-05026eba3699
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.classic_car_show
+  module:
+    - system
+    - webform
+  theme:
+    - lccf
+id: webform_3
+theme: lccf
+region: content
+weight: 1
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Classic Car Show Form'
+  label_display: '0'
+  provider: webform
+  webform_id: classic_car_show
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /classic-car-show

@@ -1,0 +1,27 @@
+uuid: b48e3b8e-bef9-4671-a2e8-c59c7ac66c2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - lccf
+_core:
+  default_config_hash: s6DdFy4B85AvcJ1icf_yeZ0yP8j3dddcgHMfQ-2oEUI
+id: lccf_main_navigation
+theme: lccf
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

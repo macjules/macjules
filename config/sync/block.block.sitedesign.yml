@@ -1,0 +1,25 @@
+uuid: ec95cfa2-6b77-4f0d-b86d-5d5108578126
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c6d75c84-887e-4562-82e9-7b4be2167e46'
+  module:
+    - block_content
+  theme:
+    - lccf
+id: sitedesign
+theme: lccf
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:c6d75c84-887e-4562-82e9-7b4be2167e46'
+settings:
+  id: 'block_content:c6d75c84-887e-4562-82e9-7b4be2167e46'
+  label: 'Site Design'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

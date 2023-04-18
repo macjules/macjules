@@ -1,0 +1,25 @@
+uuid: ec6c1ad5-bf8c-49c6-a80e-33b4f6b6db56
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lccf
+_core:
+  default_config_hash: TyCS--mSnUb4lyKfFjboQ_6pf8f40JJQXzx-0JDJnKI
+id: lccf_branding
+theme: lccf
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

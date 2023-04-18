@@ -1,0 +1,31 @@
+uuid: cb7dd351-1703-4e6c-84b2-4d8aec54285a
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.long_compton_2023_stands
+  module:
+    - system
+    - webform
+  theme:
+    - lccf
+id: webform_4
+theme: lccf
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Long Compton 2023 Community Fair Stands'
+  label_display: '0'
+  provider: webform
+  webform_id: long_compton_2023_stands
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/craft-stands\r\n/community-stalls\r\n/trade-stands"

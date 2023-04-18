@@ -1,0 +1,22 @@
+uuid: de90c354-cd03-485a-898f-2bd25138f01d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.faq_content
+id: node.faq_content.promote
+field_name: promote
+entity_type: node
+bundle: faq_content
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

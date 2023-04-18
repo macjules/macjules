@@ -1,0 +1,22 @@
+uuid: b7bd5fa1-4435-48ed-bb9c-62ed7bbb41bb
+langcode: en
+status: true
+dependencies:
+  theme:
+    - lccf
+_core:
+  default_config_hash: Pvv6H-LVIXStNH0mBNQ9Y_ct1sJqkA-iTb8Yd9mADvI
+id: lccf_local_tasks
+theme: lccf
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

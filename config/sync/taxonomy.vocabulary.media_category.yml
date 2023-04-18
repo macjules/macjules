@@ -1,0 +1,8 @@
+uuid: ebf72776-3ef9-4064-9ba4-6558ba4791d7
+langcode: en
+status: true
+dependencies: {  }
+name: 'Media Category'
+vid: media_category
+description: 'Used to categorise media types for use in pages.'
+weight: 0

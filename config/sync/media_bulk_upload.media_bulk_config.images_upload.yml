@@ -1,0 +1,16 @@
+uuid: 6f9644f3-8174-4104-8722-46226095a62b
+langcode: en
+status: true
+dependencies: {  }
+id: images_upload
+label: 'Images Upload'
+media_types:
+  image: image
+  audio: 0
+  document: 0
+  remote_video: 0
+  video: 0
+form_mode: media_library
+upload_location: upoaded_files
+show_alt: null
+show_title: null

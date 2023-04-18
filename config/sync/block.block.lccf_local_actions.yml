@@ -1,0 +1,20 @@
+uuid: 082f4e01-7766-4365-a4f5-6a2ad34aad84
+langcode: en
+status: true
+dependencies:
+  theme:
+    - lccf
+_core:
+  default_config_hash: cgheWiAMbDo8Lr6inQ955A2Y8QhD9OOyX0ZC_VW3bjk
+id: lccf_local_actions
+theme: lccf
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

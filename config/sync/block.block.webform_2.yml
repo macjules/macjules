@@ -1,0 +1,31 @@
+uuid: 65fc722c-9490-4c20-b222-6fcbc773d35c
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.dog_show
+  module:
+    - system
+    - webform
+  theme:
+    - lccf
+id: webform_2
+theme: lccf
+region: content
+weight: -1
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Dog Show form'
+  label_display: '0'
+  provider: webform
+  webform_id: dog_show
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /dog-show

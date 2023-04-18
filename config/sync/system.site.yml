@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 45498ed1-abe4-4d89-b2de-63127fddb418
+name: 'Long Compton Community Fair'
+mail: info@lccf.org
+slogan: ''
+page:
+  403: /node/1
+  404: /node/1
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
