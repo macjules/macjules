@@ -51,3 +51,5 @@ core/
 .lando*
 falses
 .idea
+
+config/files.tgz
