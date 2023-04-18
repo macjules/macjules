@@ -28,6 +28,7 @@
         "drupal/eu_cookie_compliance": "^1.24",
         "drupal/media_bulk_upload": "^3.0",
         "drupal/pathauto": "^1.11",
+        "drupal/redirect": "^1.8",
         "drupal/seckit": "^2.0",
         "drupal/shield": "^1.7",
         "drupal/token": "^1.11",

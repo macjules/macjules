@@ -6,14 +6,28 @@ main {
     background-color: rgba($lccf-white, 0.85);
     position: relative;
     top: -10rem;
-    z-index: 99;
+    z-index: 9;
   }
 
   .front-page .main-content-container {
     position: relative;
     top: 0;
-    z-index: 99;
+    z-index: 9;
+  }
 
+  .main-content-container table {
+    width: 70%;
+    border: 1px solid $lccf-black;
+    margin: 2rem 0;
+
+    td {
+      border: 1px solid $lccf-black;
+      font-size: 1.4rem;
+    }
+  }
+
+  .lccf-user {
+    padding: 10rem;
   }
 
   .lccf-content {
