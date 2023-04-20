@@ -45,7 +45,9 @@
 %}
 
 <div id="lccf_faq"{{ attributes.addClass(classes) }}>
-  <h2 class="faq-title">Frequently Asked Questions</h2>
+  {% if title %}
+  <h2 class="faq-title">{{ title }}</h2>
+  {%  endif %}
   {% if rows %}
       {{ rows }}
   {% endif %}
