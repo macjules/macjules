@@ -7,6 +7,9 @@ main {
     position: relative;
     top: -10rem;
     z-index: 9;
+    @media only screen and (max-width: 599px) {
+      top: 0;
+    }
   }
 
   .front-page .main-content-container {
@@ -36,11 +39,22 @@ main {
     }
   }
 
-  #block-lccf-local-tasks {
+  @media only screen and (max-width: 599px) {
+    .lccf-content {
+      p, li {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+    #block-lccf-local-tasks {
     float: right;
     z-index: 999;
   }
-
 }
 
-
+@media only screen and (max-width: 599px) {
+  .region-content {
+    padding: 0.5rem 0 0 0;
+  }
+}

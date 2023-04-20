@@ -10905,9 +10905,11 @@ a > .ck-content code {
 .ck-content code {
   overflow-y: auto;
 }
-.ck-content .lccf-small-logo header .branding-header img {
-  height: 10rem;
-  transition: 0.35s;
+@media only screen and (min-width: 600px) {
+  .ck-content .lccf-small-logo header .branding-header img {
+    height: 10rem;
+    transition: 0.35s;
+  }
 }
 .ck-content header {
   position: fixed;
@@ -10919,21 +10921,47 @@ a > .ck-content code {
   background: linear-gradient(90deg, rgba(12, 122, 184, 0.99) 0%, rgb(9, 20, 128) 65%);
   color: rgb(250, 250, 250);
 }
-.ck-content header .branding-header {
-  background-color: rgb(12, 122, 184);
-  border-radius: 1rem;
-  box-shadow: 0.2rem 0.2rem 0.5rem rgb(26, 18, 45);
-  display: block;
-  float: left;
-  left: 2rem;
-  padding: 0.5rem;
-  position: fixed;
-  top: 2.5rem;
-  z-index: 9;
+.ck-content header.lccf-header span.navbar-toggler-icon {
+  --bs-navbar-color: $lccf-white;
+  --bs-navbar-hover-color: $lccf-white;
+  --bs-navbar-active-color: $lccf-white;
+  --bs-navbar-toggler-border-color: $lccf-white;
+  --bs-navbar-brand-color: $lccf-white;
+  --bs-navbar-brand-hover-color: $lccf-white;
 }
-.ck-content header .branding-header img {
-  height: 20rem;
-  margin: 0;
+@media only screen and (min-width: 600px) {
+  .ck-content header .branding-header {
+    background-color: rgb(12, 122, 184);
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem rgb(26, 18, 45);
+    display: block;
+    float: left;
+    left: 2rem;
+    padding: 0.5rem;
+    position: fixed;
+    top: 2.5rem;
+    z-index: 9;
+  }
+  .ck-content header .branding-header img {
+    height: 20rem;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .ck-content header .branding-header {
+    background-color: rgb(12, 122, 184);
+    display: block;
+    float: right;
+    right: 1rem;
+    padding: 0.5rem;
+    position: fixed;
+    top: 0.5rem;
+    z-index: 9;
+  }
+  .ck-content header .branding-header img {
+    height: 6.5rem;
+    margin: 0;
+  }
 }
 .ck-content .menu-main {
   position: relative;
@@ -10971,6 +10999,11 @@ a > .ck-content code {
 .ck-content .menu-main .dropdown-item.active, .ck-content .menu-main .media-library-view--widget .view-header a.dropdown-item.is-active, .ck-content .media-library-view--widget .view-header .menu-main a.dropdown-item.is-active, .ck-content .menu-main .dropdown-item:hover {
   background-color: transparent;
 }
+@media only screen and (max-width: 599px) {
+  .ck-content .menu-main a.dropdown-item {
+    white-space: normal;
+  }
+}
 .ck-content .menu-main-nav {
   float: right;
   margin-top: 2rem;
@@ -10989,6 +11022,11 @@ a > .ck-content code {
   position: relative;
   top: -10rem;
   z-index: 9;
+}
+@media only screen and (max-width: 599px) {
+  .ck-content main .main-content-container {
+    top: 0;
+  }
 }
 .ck-content main .front-page .main-content-container {
   position: relative;
@@ -11010,9 +11048,19 @@ a > .ck-content code {
 .ck-content main .lccf-content p, .ck-content main .lccf-content li {
   font-size: 1.5rem;
 }
+@media only screen and (max-width: 599px) {
+  .ck-content main .lccf-content p, .ck-content main .lccf-content li {
+    font-size: 1.3rem;
+  }
+}
 .ck-content main #block-lccf-local-tasks {
   float: right;
   z-index: 999;
+}
+@media only screen and (max-width: 599px) {
+  .ck-content .region-content {
+    padding: 0.5rem 0 0 0;
+  }
 }
 .ck-content footer {
   background: rgb(12, 122, 184);
@@ -11084,8 +11132,10 @@ a > .ck-content code {
   background: linear-gradient(243deg, rgb(121, 25, 9) 22%, rgba(255, 117, 0, 0.8281513289) 100%);
   color: rgb(250, 250, 250);
 }
-.ck-content section.node .field--name-body {
-  padding: 4rem 0 0;
+@media only screen and (min-width: 600px) {
+  .ck-content section.node .field--name-body {
+    padding: 4rem 0 0;
+  }
 }
 .ck-content .carousel img {
   display: block;
@@ -11094,12 +11144,32 @@ a > .ck-content code {
 .ck-content .main-content-container {
   padding: 2.5rem 2.5rem 0;
 }
+@media only screen and (max-width: 599px) {
+  .ck-content .main-content-container {
+    padding: 2.5rem 0.75rem 0;
+  }
+}
 .ck-content .main-content-container img {
   display: block;
   height: auto;
   margin: 0 auto;
   padding: 2rem 0;
   width: 50%;
+}
+@media only screen and (max-width: 599px) {
+  .ck-content .main-content-container img {
+    width: 100%;
+  }
+}
+.ck-content fieldset legend {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media only screen and (max-width: 599px) {
+  .ck-content fieldset legend {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
 }
 .ck-content .view-faq {
   padding-bottom: 2rem;
