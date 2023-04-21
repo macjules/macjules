@@ -12,7 +12,7 @@ dependencies:
 id: faq_block
 theme: lccf
 region: content
-weight: 0
+weight: -1
 provider: null
 plugin: 'views_block:faq-faq'
 settings:
@@ -26,4 +26,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /contacts-and-help
+    pages: /information-long-compton-community-fete-saturday-24th-june-2023

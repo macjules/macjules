@@ -52,4 +52,12 @@ fieldset {
     font-size: 1.6rem;
     padding-left: 0;
   }
+  .accordion-button {
+    background: rgb(8,2,98);
+    background: linear-gradient(90deg, rgba(8,2,98,1) 26%, rgba(126,226,246,1) 100%);
+    color: $lccf-white;
+    padding: 1rem 2rem;
+    font-weight: 300;
+    margin-bottom: 0.25rem;
+  }
 }

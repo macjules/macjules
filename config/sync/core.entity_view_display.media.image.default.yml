@@ -6,6 +6,7 @@ dependencies:
     - field.field.media.image.field_media_category
     - field.field.media.image.field_media_image
     - field.field.media.image.field_media_link
+    - image.style.media_carousel
     - media.type.image
   module:
     - image
@@ -21,7 +22,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: media_carousel
       image_loading:
         attribute: lazy
     third_party_settings: {  }

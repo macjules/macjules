@@ -1,0 +1,15 @@
+uuid: 9e84fccc-d55b-4727-b7cf-e29b613d7e6a
+langcode: en
+status: true
+dependencies: {  }
+name: media_carousel
+label: 'Media Carousel'
+effects:
+  3f7e2161-37e2-41ad-9c32-f2e038582a30:
+    uuid: 3f7e2161-37e2-41ad-9c32-f2e038582a30
+    id: image_scale
+    weight: 1
+    data:
+      width: 1400
+      height: null
+      upscale: false

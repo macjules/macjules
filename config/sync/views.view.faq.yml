@@ -5,8 +5,12 @@ dependencies:
   config:
     - field.storage.node.body
     - node.type.faq_content
+    - taxonomy.vocabulary.faq_
+  content:
+    - 'taxonomy_term:faq_:102a33b2-48ac-48de-a1b7-a4f2151b45ef'
   module:
     - node
+    - taxonomy
     - text
     - user
 id: faq
@@ -37,7 +41,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: 'FAQ{{counter}}'
+            text: 'faq{{counter}}'
             make_link: false
             path: ''
             absolute: false
@@ -284,6 +288,103 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+  dog_show:
+    id: dog_show
+    display_title: 'Dog Show Block'
+    display_plugin: block
+    position: 2
+    display_options:
+      sorts: {  }
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            faq_content: faq_content
+        field_faq_category_target_id:
+          id: field_faq_category_target_id
+          table: node__field_faq_category
+          field: field_faq_category_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            5: 5
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: faq_
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        sorts: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      block_description: 'Dog Show Block'
+      allow:
+        items_per_page: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:

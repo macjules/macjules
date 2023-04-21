@@ -1,7 +1,12 @@
 uuid: 6631152e-8f05-46ae-a2aa-2d9ab854aa6d
 langcode: en
 status: open
-dependencies: {  }
+dependencies:
+  module:
+    - honeypot
+third_party_settings:
+  honeypot:
+    honeypot: true
 weight: 0
 open: null
 close: null
@@ -65,7 +70,11 @@ elements: |-
     '#type': webform_computed_twig
     '#title': 'Total Entries:'
     '#title_display': none
-    '#template': "To pay: £ {{ data['competitions']|length * 2 }}"
+    '#template': |-
+      To pay:<strong> £ {{ data['competitions']|length * 2 }}</strong>
+      Please would you bring this amount with you in cash on the day.
+    '#whitespace': trim
+    '#ajax': true
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'

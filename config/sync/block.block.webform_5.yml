@@ -1,0 +1,31 @@
+uuid: c7c685dc-7b56-42b2-914a-d7d6d78a3b9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.long_compton_feedback
+  module:
+    - system
+    - webform
+  theme:
+    - lccf
+id: webform_5
+theme: lccf
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Feedback Form'
+  label_display: '0'
+  provider: webform
+  webform_id: long_compton_feedback
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /information-long-compton-community-fete-saturday-24th-june-2023

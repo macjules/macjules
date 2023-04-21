@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.faq_content.body
+    - field.field.node.faq_content.field_faq_category
     - node.type.faq_content
   module:
     - text
@@ -18,11 +19,12 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 1
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_faq_category: true

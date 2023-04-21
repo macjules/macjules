@@ -1,0 +1,29 @@
+uuid: 25314423-7c24-45b5-bc38-49485ee68d9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.faq
+  module:
+    - system
+    - views
+  theme:
+    - lccf
+id: views_block__faq_dog_show
+theme: lccf
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:faq-dog_show'
+settings:
+  id: 'views_block:faq-dog_show'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /dog-show
