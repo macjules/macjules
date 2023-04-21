@@ -31,7 +31,7 @@ modules/contrib
 themes/contrib
 themes/custom/*/node_modules
 
-
+composer.lock
 core/
 
 # If you prefer to store your .gitignore file in the sites/ folder, comment
