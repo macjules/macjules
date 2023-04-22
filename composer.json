@@ -33,6 +33,7 @@
         "drupal/redirect": "^1.8",
         "drupal/seckit": "^2.0",
         "drupal/shield": "^1.7",
+        "drupal/smtp": "^1.2",
         "drupal/token": "^1.11",
         "drupal/webform": "^6.2@beta",
         "drush/drush": "^11.5",
