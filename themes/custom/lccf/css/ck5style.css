@@ -11034,18 +11034,13 @@ a > .ck-content code {
 }
 @media only screen and (max-width: 599px) {
   .ck-content main .main-content-container {
-    margin-top: 0;
+    top: 0;
   }
 }
 .ck-content main .front-page .main-content-container {
   position: relative;
-  margin-top: -10rem;
+  top: 0;
   z-index: 9;
-}
-@media only screen and (max-width: 599px) {
-  .ck-content main .front-page .main-content-container {
-    margin-top: 0;
-  }
 }
 .ck-content main .main-content-container table {
   width: 70%;
