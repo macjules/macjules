@@ -112,6 +112,11 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
+        },
+        "patches": {
+            "drupal/xmlsitemap": {
+                "Fixed call to undefined method": "https://git.drupalcode.org/project/xmlsitemap/-/commit/f7122db.patch"
+            }
         }
     }
 }
