@@ -32,6 +32,7 @@
         "drupal/redirect": "^1.8",
         "drupal/seckit": "^2.0",
         "drupal/shield": "^1.7",
+        "drupal/simple_sitemap": "^4.1",
         "drupal/smtp": "^1.2",
         "drupal/token": "^1.11",
         "drupal/username_enumeration_prevention": "^1.3",
