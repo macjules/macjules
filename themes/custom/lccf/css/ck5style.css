@@ -11199,5 +11199,9 @@ a > .ck-content code {
   font-weight: 300;
   margin-bottom: 0.25rem;
 }
+.ck-content .webform-submission-form {
+  font-size: 1.5rem;
+  padding: 2rem 2.5rem;
+}
 
 /*# sourceMappingURL=ck5style.css.map */

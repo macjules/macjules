@@ -12025,4 +12025,9 @@ fieldset legend {
   margin-bottom: 0.25rem;
 }
 
+.webform-submission-form {
+  font-size: 1.5rem;
+  padding: 2rem 2.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
