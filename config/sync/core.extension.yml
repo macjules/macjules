@@ -4,24 +4,22 @@ module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
   automated_cron: 0
+  backup_migrate: 0
   big_pipe: 0
   block: 0
   block_content: 0
   breakpoint: 0
   ckeditor5: 0
-  comment: 0
   config: 0
   contextual: 0
   datetime: 0
   datetime_range: 0
   dblog: 0
-  devel: 0
   dropzonejs: 0
   dynamic_page_cache: 0
   editor: 0
   email_registration: 0
   field: 0
-  field_ui: 0
   file: 0
   filter: 0
   google_analytics: 0
@@ -44,10 +42,13 @@ module:
   path_alias: 0
   redirect: 0
   redirect_404: 0
+  responsive_image: 0
   search: 0
   seckit: 0
-  shield: 0
   shortcut: 0
+  simple_sitemap: 0
+  smtp: 0
+  syslog: 0
   system: 0
   taxonomy: 0
   telephone: 0
@@ -57,6 +58,7 @@ module:
   tour: 0
   update: 0
   user: 0
+  username_enumeration_prevention: 0
   views_ui: 0
   webform: 0
   webform_node: 0

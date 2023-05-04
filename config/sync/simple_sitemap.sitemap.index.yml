@@ -1,0 +1,13 @@
+uuid: cf866135-cf91-4ead-9aed-9a6836d71ed9
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_sitemap.type.index
+_core:
+  default_config_hash: aJs7eKxEbjBloVrp0IuxQbeq25CNH0r9AhSS29kHFMw
+id: index
+label: 'Sitemap Index'
+description: 'The sitemap index listing all other sitemaps - useful if there are at least two other sitemaps. In most cases this sitemap should be last in the generation queue and set as the default sitemap.'
+type: index
+weight: 1000

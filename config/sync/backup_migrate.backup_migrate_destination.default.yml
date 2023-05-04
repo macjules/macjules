@@ -1,0 +1,9 @@
+uuid: ad47bcaf-4bc6-4d3c-bfba-ff95c88e86a7
+langcode: en
+status: true
+dependencies: {  }
+id: default
+label: Default
+type: Directory
+config:
+  directory: ../config/backups

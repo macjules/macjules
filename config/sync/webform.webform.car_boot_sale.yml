@@ -18,6 +18,10 @@ title: 'Long Compton 2023 Community Fete Car Boot Sale'
 description: ''
 category: 'Car Boot'
 elements: |-
+  pre_booking:
+    '#type': webform_markup
+    '#display_on': both
+    '#markup': '<h2>Pre Booking Form</h2>'
   your_name:
     '#type': textfield
     '#title': 'Your Name'
@@ -38,35 +42,47 @@ elements: |-
     '#type': radios
     '#title': Vehicle
     '#options':
-      'Car £13': Car
+      'Car £10': Car
       'Car + trailer £15': 'Car with trailer'
-      'Van £18': Van
+      'Van £20': Van
     '#required': true
     '#default_value': car
-  agree_pay_cash:
-    '#type': checkbox
-    '#title': 'I agree to pay £13 in cash on the day.'
-    '#description_display': before
+  pay_cash_car:
+    '#type': webform_computed_twig
+    '#title': 'Payment in Cash - Car'
+    '#title_display': none
     '#states':
       visible:
         ':input[name="vehicle"]':
-          value: 'Car £13'
-  agree_15:
-    '#type': checkbox
-    '#title': 'I agree to pay £15 in cash on the day.'
-    '#description_display': before
+          value: 'Car £10'
+    '#template': |-
+      Amount to pay: <strong> £10</strong>. 
+      Please would you bring this amount with you in cash on the day.
+    '#hide_empty': true
+  pay_cash_car_trailer:
+    '#type': webform_computed_twig
+    '#title': 'Payment in Cash - Car & Trailer'
+    '#title_display': none
     '#states':
       visible:
         ':input[name="vehicle"]':
           value: 'Car + trailer £15'
-  agree_18:
-    '#type': checkbox
-    '#title': 'I agree to pay £18 in cash on the day.'
-    '#description_display': before
+    '#template': |-
+      Amount to pay: <strong> £15</strong>. 
+      Please would you bring this amount with you in cash on the day.
+    '#hide_empty': true
+  pay_cash_van:
+    '#type': webform_computed_twig
+    '#title': 'Payment in Cash - Van'
+    '#title_display': none
     '#states':
       visible:
         ':input[name="vehicle"]':
-          value: 'Van £18'
+          value: 'Van £20'
+    '#template': |-
+      Amount to pay: <strong> £20</strong>. 
+      Please would you bring this amount with you in cash on the day.
+    '#hide_empty': true
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
@@ -279,19 +295,22 @@ handlers:
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
-      cc_mail: ''
+      cc_mail: '[webform:author:mail]'
       cc_options: {  }
-      from_mail: _default
+      from_mail: '[webform_submission:values:your_email_address:raw]'
       from_options: {  }
-      from_name: _default
-      reply_to: ''
+      from_name: '[webform_submission:values:your_name:raw]'
+      reply_to: '[webform:author:mail]'
       return_path: ''
       sender_mail: ''
       sender_name: ''
       subject: 'Long Comption Community Fair 2023 Car Boot Sale'
-      body: '<p>Submitted on [webform_submission:created]</p><p>Submitted by: [webform_submission:user]</p><p>Submitted values are:</p><p>[webform_submission:values]</p>'
-      excluded_elements: {  }
-      ignore_access: false
+      body: '<p>Many thanks for submitting your entry and we will be pleased to see you on 24th June. Details are:<br><br>[webform_submission:values]<br>&nbsp;</p>'
+      excluded_elements:
+        your_name: your_name
+        your_email_address: your_email_address
+        your_mobile_number: your_mobile_number
+      ignore_access: true
       exclude_empty: true
       exclude_empty_checkbox: true
       exclude_attachments: false

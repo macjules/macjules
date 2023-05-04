@@ -1,0 +1,13 @@
+uuid: 27914cdd-30a9-4e46-93eb-db7ecef444c3
+langcode: en
+status: true
+dependencies: {  }
+id: monthly_files_schedule
+label: 'Monthly Files Schedule'
+enabled: true
+keep: 2
+period: 2419200
+cron: null
+source_id: public_files
+destination_id: private_files
+settings_profile_id: lccf

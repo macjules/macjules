@@ -218,5 +218,42 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  email:
+    id: email
+    handler_id: email
+    label: Email
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:your_email_address:raw]'
+      to_options: {  }
+      bcc_mail: '[webform:author:mail]'
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform:author:mail]'
+      from_options: {  }
+      from_name: '[webform:author:display-name]'
+      reply_to: '[webform:author:mail]'
+      return_path: ''
+      sender_mail: '[webform:author:mail]'
+      sender_name: '[webform:author:display-name]'
+      subject: 'Long Compton Community Fete - Feedback form'
+      body: "<p><strong>\r\nMany thanks {{ data['your_name'] }}\r\n</strong></p>\r\n<p>We have received your feedback.</p>\r\n<p>Wish best wishes</p>\r\n<h4>Long Compton Community Fete Team</h4>\r\n"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: true
+      theme_name: lccf
+      parameters: {  }
+      debug: false
 variants: {  }

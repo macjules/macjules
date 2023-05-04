@@ -13,3 +13,15 @@ definitions:
     menu_name: main
     parent: ''
     expanded: false
+  'admin_toolbar_tools__extra_links:add_media':
+    weight: 1
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:media_page'
+    enabled: true
+    expanded: false
+  entity__media_bulk__collection:
+    weight: 2
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:media_page'
+    expanded: false
+    enabled: true

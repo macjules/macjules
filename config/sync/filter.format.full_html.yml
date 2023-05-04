@@ -9,7 +9,7 @@ _core:
   default_config_hash: WNeK5FbcY8pXgEpbD_KgRzlF1-5PL3BJXwqaBctPTqw
 name: 'Full HTML'
 format: full_html
-weight: 2
+weight: -10
 filters:
   filter_align:
     id: filter_align
@@ -63,3 +63,10 @@ filters:
     status: true
     weight: 0
     settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72

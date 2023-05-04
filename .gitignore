@@ -20,6 +20,7 @@
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php
 sites/*/services*.yml
+sites/*/aliases.drushrc.php
 
 # Ignore paths that contain user-generated content.
 sites/*/files
@@ -54,3 +55,5 @@ falses
 
 config/files.tgz
 config/db_backup
+config/backups
+

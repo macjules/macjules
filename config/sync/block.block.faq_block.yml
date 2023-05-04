@@ -12,7 +12,7 @@ dependencies:
 id: faq_block
 theme: lccf
 region: content
-weight: -1
+weight: 0
 provider: null
 plugin: 'views_block:faq-faq'
 settings:

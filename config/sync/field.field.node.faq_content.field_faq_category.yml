@@ -14,7 +14,7 @@ entity_type: node
 bundle: faq_content
 label: 'FAQ Category'
 description: ''
-required: false
+required: true
 translatable: false
 default_value:
   -

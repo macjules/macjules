@@ -267,17 +267,17 @@ handlers:
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
-      cc_mail: '[webform_submission:values:owner_email_address:raw]'
+      cc_mail: '[webform:author:mail]'
       cc_options: {  }
-      from_mail: _default
+      from_mail: '[site:mail]'
       from_options: {  }
       from_name: _default
-      reply_to: ''
+      reply_to: '[webform:author:mail]'
       return_path: ''
-      sender_mail: ''
-      sender_name: ''
+      sender_mail: '[webform:author:mail]'
+      sender_name: '[webform:author:display-name]'
       subject: 'Long Compton 2023 Community Fair Classic Car Show'
-      body: '<p>Submitted on [webform_submission:created]</p><p>Submitted by: [webform_submission:user]</p><p>Submitted values are:</p><p>[webform_submission:values]</p>'
+      body: '<p>&lt;p&gt;&lt;strong&gt;Thank you for submitting your entry and we look forward to seeing you on 24th June,&lt;/strong&gt;&lt;/p&gt;<br><br>&lt;p&gt;Please ensure your details below are correct otherwise contact us at:&lt;/p&gt;</p><p>&nbsp;</p><p>&nbsp;</p><p><span style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);color:rgb(35, 36, 41);display:inline !important;float:none;font-family:BlinkMacSystemFont, -apple-system, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">[webform:author:mail]</span></p><p>&nbsp;</p><p><br><span style="-webkit-text-stroke-width:0px;background-color:rgb(245, 248, 255);color:rgb(35, 36, 41);display:inline !important;float:none;font-family:BlinkMacSystemFont, -apple-system, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">&lt;p&gt;Many thanks.&lt;/p&gt;</span><br><br><span style="-webkit-text-stroke-width:0px;background-color:rgb(245, 248, 255);color:rgb(35, 36, 41);display:inline !important;float:none;font-family:BlinkMacSystemFont, -apple-system, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">&lt;h4&gt;Long Compton Community Fete Organisers&lt;/h4&gt;</span><br>&nbsp;</p><p>&lt;p&gt;[webform_submission:values]&lt;/p&gt;</p><p>&nbsp;</p><p>&nbsp;</p>'
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true

@@ -58,13 +58,10 @@ elements: |-
       '1 Best Male Dog': '1 Best Male Dog -- Most Fabulous Fella - Best Male Dog'
       '2 Best Female Dog': '2 Best Female Dog -- Loveliest Lady - Best Female Dog - 1 yr +'
       '3 Cool Pup': '3 Cool Pup -- Cool Pup - Best Puppy - 6 months - 1 yr'
-      '4 Best Furry Family': '4 Best Furry Family -- Best Furry Family - 3 Or More Dogs'
-      '5 Best Rescue Dog': '5 Best Rescue Dog -- Best Rescue Dog'
-      '6 Golden Oldie ': '6 Golden Oldie  -- Golden Oldie - Best Dog Over 10 Years'
-      '7 Best Trick': '7 Best Trick -- Best Trick'
-      '8 Dog With The Waggiest Tail': '8 Dog With The Waggiest Tail -- Dog With The Waggiest Tail'
-      '9 Dog the judge would most like to take home': '9 Dog the judge would most like to take home -- Dog the judge would most like to take home'
-      '10 Best Treat Catcher': '10 Best Treat Catcher -- Best Treat Catcher'
+      '4 Golden Oldie ': '4 Golden Oldie  -- Golden Oldie - Best Dog Over 10 Years'
+      '5 Best Trick': '5 Best Trick -- Best Trick'
+      '6 Dog With The Waggiest Tail': '6 Dog With The Waggiest Tail -- Dog With The Waggiest Tail'
+      '7 Dog the judge would most like to take home': '7 Dog the judge would most like to take home -- Dog the judge would most like to take home'
     '#required': true
   total_entries_:
     '#type': webform_computed_twig
@@ -82,12 +79,12 @@ elements: |-
 css: ''
 javascript: ''
 settings:
-  ajax: false
+  ajax: true
   ajax_scroll_top: form
-  ajax_progress_type: ''
-  ajax_effect: ''
+  ajax_progress_type: throbber
+  ajax_effect: none
   ajax_speed: null
-  page: true
+  page: false
   page_submit_path: ''
   page_confirm_path: ''
   page_theme_name: ''
@@ -280,17 +277,17 @@ handlers:
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
-      cc_mail: ''
+      cc_mail: '[webform:author:mail]'
       cc_options: {  }
-      from_mail: _default
+      from_mail: noreply@lcfete.org
       from_options: {  }
       from_name: 'Long Compton 2023 Community Fete Dog Show'
-      reply_to: ''
+      reply_to: '[webform:author:mail]'
       return_path: ''
       sender_mail: ''
       sender_name: ''
       subject: 'Long Compton 2023 Community Fete Dog Show'
-      body: '<p>Submitted on [webform_submission:created]</p><p>Submitted by: [webform_submission:user]</p><p>Submitted values are:</p><p>[webform_submission:values]</p>'
+      body: "<p>Thank you {{ data['your_name'] }}</p>\r\n<p>Your dog <strong>{{ data['dog_name'] }}</strong> has been entered into the 2023 dog show</p>\r\n<p>\r\nYou entered {{ data['competitions']|length }} shows so please remember to bring <strong>£{{ data['competitions']|length * 2 }}</strong> with you in cash on the day.\r\n</p>\r\n\r\n<p>Many thanks and we look forward to seeing you on the 24th June.</p>\r\n\r\n<p>If you have any questions please email <a href=\"mailto:alan@lcfete.org\">alan@lcfete.org</a></p>"
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
@@ -298,7 +295,7 @@ handlers:
       exclude_attachments: false
       html: true
       attachments: false
-      twig: false
+      twig: true
       theme_name: ''
       parameters: {  }
       debug: false

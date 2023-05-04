@@ -2,8 +2,8 @@ _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
 uuid: 45498ed1-abe4-4d89-b2de-63127fddb418
-name: 'Long Compton Community Fair'
-mail: info@lccf.org
+name: 'Long Compton Community Fete'
+mail: lcfete@gmail.com
 slogan: ''
 page:
   403: /node/1

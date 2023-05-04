@@ -12,7 +12,7 @@ dependencies:
 id: webform_4
 theme: lccf
 region: content
-weight: 1
+weight: 2
 provider: null
 plugin: webform_block
 settings:

@@ -14,7 +14,7 @@ uid: 3
 template: false
 archive: false
 id: long_compton_2023_stands
-title: 'Long Compton 2023 Community Fair Stands'
+title: 'Long Compton Community Fete - Stands and Stalls'
 description: ''
 category: Stands
 elements: |-
@@ -276,5 +276,42 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  long_compton_community_fete_stands_and_stalls:
+    id: email
+    handler_id: long_compton_community_fete_stands_and_stalls
+    label: 'Long Compton Community Fete - Stands and Stalls'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:your_email_address:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: '[webform:author:mail]'
+      cc_options: {  }
+      from_mail: noreply@lcfete.org
+      from_options: {  }
+      from_name: '[webform:author:display-name]'
+      reply_to: '[webform:author:mail]'
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Long Compton Community Fete - Stands and Stalls'
+      body: '<p>&lt;p&gt;Many thanks for your submission and please find below the details you have sent to us.&lt;/p&gt;</p><p>&lt;p&gt;Please contact us using the below email if you have any questions.&lt;/p&gt;<br>&nbsp;</p><p>[webform:author:mail]</p><p>&nbsp;</p><p><br>[webform_submission:values]</p>'
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
 variants: {  }
