@@ -29,6 +29,7 @@
         "drupal/google_analytics": "^4.0",
         "drupal/honeypot": "^2.1",
         "drupal/media_bulk_upload": "^3.0",
+        "drupal/memcache": "^2.5",
         "drupal/pathauto": "^1.11",
         "drupal/redirect": "^1.8",
         "drupal/seckit": "^2.0",
