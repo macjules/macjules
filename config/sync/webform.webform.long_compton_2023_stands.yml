@@ -38,56 +38,66 @@ elements: |-
     '#title': 'Type of stand'
     '#options':
       Community: Community
-      'Community without Protection': 'Community without Protection'
+      'Community with Stall': 'Community with Stall'
       Craft: Craft
-      'Craft without Protection': 'Craft without Protection'
-      Commercial: Commercial
+      'Craft with Stall': 'Craft with Stall'
+      Commercial/Trade: Commercial/Trade
+      'Commercial/Trade with Stall': 'Commercial/Trade with Stall'
     '#required': true
   goods_on_display:
     '#type': textarea
     '#title': 'Goods on display'
     '#description': '<p>Please provide a brief description of the sort of goods or services that you will be retailing.</p>'
     '#multiple__no_items_message': '<p>No items entered. Please add items below.</p>'
-  community_with:
+  community:
     '#type': processed_text
     '#states':
       visible:
         ':input[name="type_of_stand"]':
           value: Community
-    '#text': '<p>I agree to transfer the sum of £65 to the following bank before 24th June 2023</p><p>Bank: HSBC</p><p>Account name: Long Compton Community Fete Association</p><p>Sort Code: 40-18-57</p><p>Account number: 90685003</p>'
+    '#text': '<p>Community &nbsp;(without stall) are free of charge.</p>'
     '#format': basic_html
-  community_without:
+  community_with:
     '#type': processed_text
     '#states':
       visible:
         ':input[name="type_of_stand"]':
-          value: 'Community without Protection'
-    '#text': '<p>I agree to transfer the sum of £30 to the following bank before 24th June 2023</p><p>Bank: HSBC</p><p>Account name: Long Compton Community Fete Association</p><p>Sort Code: 40-18-57</p><p>Account number: 90685003</p>'
+          value: 'Community with Stall'
+    '#text': '<p>I agree to transfer the sum of £40 to the following bank before 24th June 2023</p><p>Bank: HSBC</p><p>Account name: Long Compton Community Fete Association</p><p>Sort Code: 40-18-57</p><p>Account number: 90685003</p>'
     '#format': basic_html
   craft_with:
     '#type': processed_text
     '#states':
       visible:
         ':input[name="type_of_stand"]':
-          value: Craft
+          value: 'Craft with Stall'
     '#display_on': both
-    '#text': '<p>I agree to transfer the sum of £65 to the following bank before 24th June 2023</p><p>Bank: HSBC</p><p>Account name: Long Compton Community Fete Association</p><p>Sort Code: 40-18-57</p><p>Account number: 90685003</p>'
+    '#text': '<p>I agree to transfer the sum of £50 to the following bank before 24th June 2023</p><p>Bank: HSBC</p><p>Account name: Long Compton Community Fete Association</p><p>Sort Code: 40-18-57</p><p>Account number: 90685003</p>'
     '#format': basic_html
   craft_without:
     '#type': processed_text
     '#states':
       visible:
         ':input[name="type_of_stand"]':
-          value: 'Craft without Protection'
+          value: Craft
     '#display_on': both
-    '#text': '<p>I agree to transfer the sum of £30 to the following bank before 24th June 2023</p><p>Bank: HSBC</p><p>Account name: Long Compton Community Fete Association</p><p>Sort Code: 40-18-57</p><p>Account number: 90685003</p>'
+    '#text': '<p>I agree to transfer the sum of £10 to the following bank before 24th June 2023</p><p>Bank: HSBC</p><p>Account name: Long Compton Community Fete Association</p><p>Sort Code: 40-18-57</p><p>Account number: 90685003</p>'
     '#format': basic_html
   commercial:
     '#type': processed_text
     '#states':
       visible:
         ':input[name="type_of_stand"]':
-          value: Commercial
+          value: Commercial/Trade
+    '#display_on': both
+    '#text': '<p>I agree to transfer the sum of £25 to the following bank before 24th June 2023</p><p>Bank: HSBC</p><p>Account name: Long Compton Community Fete Association</p><p>Sort Code: 40-18-57</p><p>Account number: 90685003</p><p>I further agree to pay an agreed percentage of profits from the fete for the day to the Long Compton Community Fete Association charities fund.</p>'
+    '#format': basic_html
+  commercial_with:
+    '#type': processed_text
+    '#states':
+      visible:
+        ':input[name="type_of_stand"]':
+          value: 'Commercial/Trade with Stall'
     '#display_on': both
     '#text': '<p>I agree to transfer the sum of £65 to the following bank before 24th June 2023</p><p>Bank: HSBC</p><p>Account name: Long Compton Community Fete Association</p><p>Sort Code: 40-18-57</p><p>Account number: 90685003</p><p>I further agree to pay an agreed percentage of profits from the fete for the day to the Long Compton Community Fete Association charities fund.</p>'
     '#format': basic_html

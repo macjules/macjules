@@ -31,24 +31,13 @@
  * @ingroup themeable
  */
 #}
-{% set count = fields.counter.content|striptags %}
+{% set count = fields.counter.content|striptags|trim %}
 
-{% if loop.first %}
 <h3 class="accordion-header">
-  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#{{ count|trim }}"
-          aria-expanded="true" aria-controls="{{ count|trim }}">
+  <button class="accordion-button {% if count != 'faq0' %} collapsed{% endif %}" type="button" data-bs-toggle="collapse" data-bs-target="#{{ count|trim }}"
+    {% if count == 'faq0' %} aria-expanded="true" {%  else %} aria-expanded="false" {% endif %} aria-controls="{{ count|trim }}">
   {{ fields.title.content }}</h3>
   </button>
-<div id="{{ count|trim }}" class="accordion-collapse collapse show" data-bs-parent="#lccf_faq">
+<div id="{{ count }}" class="accordion-collapse collapse {% if count == 'faq0' %} show {% endif %}" data-bs-parent="#lccf_faq">
   <div class="accordion-body">{{ fields.body.content }}</div>
 </div>
-{%  else %}
-<h3 class="accordion-header">
-  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ count|trim }}"
-          aria-expanded="false" aria-controls="{{ count|trim }}">
-  {{ fields.title.content }}</h3>
-</button>
-<div id="{{ count|trim }}" class="accordion-collapse collapse" data-bs-parent="#lccf_faq">
-  <div class="accordion-body">{{ fields.body.content }}</div>
-</div>
-{% endif %}

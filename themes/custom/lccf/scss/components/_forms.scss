@@ -1,4 +1,7 @@
 .webform-submission-form {
   font-size: 1.5rem;
   padding: 2rem 2.5rem ;
+  @media only screen and (max-width: 599px) {
+    padding: 1rem 1.5rem ;
+  }
 }

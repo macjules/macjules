@@ -293,7 +293,7 @@ handlers:
         - completed
       to_mail: '[webform_submission:values:your_email_address:raw]'
       to_options: {  }
-      bcc_mail: ''
+      bcc_mail: longcomchapel@hotmail.com
       bcc_options: {  }
       cc_mail: '[webform:author:mail]'
       cc_options: {  }

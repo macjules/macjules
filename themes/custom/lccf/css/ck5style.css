@@ -11031,16 +11031,22 @@ a > .ck-content code {
   position: relative;
   margin-top: -10rem;
   z-index: 9;
+  top: 0;
 }
 @media only screen and (max-width: 599px) {
   .ck-content main .main-content-container {
-    top: 0;
+    margin-top: 0;
   }
 }
 .ck-content main .front-page .main-content-container {
   position: relative;
   top: 0;
   z-index: 9;
+}
+@media only screen and (max-width: 599px) {
+  .ck-content main .front-page .main-content-container {
+    margin-top: 0;
+  }
 }
 .ck-content main .main-content-container table {
   width: 70%;
@@ -11202,6 +11208,11 @@ a > .ck-content code {
 .ck-content .webform-submission-form {
   font-size: 1.5rem;
   padding: 2rem 2.5rem;
+}
+@media only screen and (max-width: 599px) {
+  .ck-content .webform-submission-form {
+    padding: 1rem 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=ck5style.css.map */
