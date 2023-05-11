@@ -67,10 +67,27 @@ elements: |-
     '#type': webform_computed_twig
     '#title': 'Total Entries:'
     '#title_display': none
+    '#states':
+      invisible:
+        ':input[name="competitions[1 Best Male Dog]"]':
+          unchecked: true
+        ':input[name="competitions[2 Best Female Dog]"]':
+          unchecked: true
+        ':input[name="competitions[3 Cool Pup]"]':
+          unchecked: true
+        ':input[name="competitions[4 Golden Oldie ]"]':
+          unchecked: true
+        ':input[name="competitions[5 Best Trick]"]':
+          unchecked: true
+        ':input[name="competitions[6 Dog With The Waggiest Tail]"]':
+          unchecked: true
+        ':input[name="competitions[7 Dog the judge would most like to take home]"]':
+          unchecked: true
     '#template': |-
       To pay:<strong> £ {{ data['competitions']|length * 2 }}</strong>
       Please would you bring this amount with you in cash on the day.
     '#whitespace': trim
+    '#hide_empty': true
     '#ajax': true
   actions:
     '#type': webform_actions
