@@ -35,6 +35,9 @@ AddEncoding gzip svgz
   # Enable expirations.
   ExpiresActive On
 
+  # Cache all files and redirects for 2 weeks after access (A).
+  ExpiresDefault A1209600
+
   <FilesMatch \.php$>
     # Do not allow PHP scripts to be cached unless they explicitly send cache
     # headers themselves. Otherwise all scripts would have to overwrite the
@@ -43,18 +46,6 @@ AddEncoding gzip svgz
     # problems if a non-Drupal PHP file is installed in a subdirectory.
     ExpiresActive Off
   </FilesMatch>
-
-  ExpiresByType text/html "access plus 7200 seconds"
-  ExpiresByType image/gif "access plus 2678400 seconds"
-  ExpiresByType image/jpeg "access plus 2678400 seconds"
-  ExpiresByType image/png "access plus 2678400 seconds"
-  ExpiresByType image/webm "access plus 2678400 seconds"
-  ExpiresByType image/webp "access plus 2678400 seconds"
-  ExpiresByType text/css "access plus 518400 seconds"
-  ExpiresByType text/javascript "access plus 2678400 seconds"
-  ExpiresByType application/x-javascript "access plus 2678400 seconds"
-  # Cache all files and redirects for 2 weeks after access (A).
-  ExpiresDefault A1209600
 </IfModule>
 
 # Set a fallback resource if mod_rewrite is not enabled. This allows Drupal to
@@ -160,12 +151,12 @@ AddEncoding gzip svgz
     # Serve gzip compressed CSS files if they exist and the client accepts gzip.
     RewriteCond %{HTTP:Accept-encoding} gzip
     RewriteCond %{REQUEST_FILENAME}\.gz -s
-    RewriteRule ^(.*css_[a-zA-Z0-9-_])\.css$ $1\.css\.gz [QSA]
+    RewriteRule ^(.*css_[a-zA-Z0-9-_]+)\.css$ $1\.css\.gz [QSA]
 
     # Serve gzip compressed JS files if they exist and the client accepts gzip.
     RewriteCond %{HTTP:Accept-encoding} gzip
     RewriteCond %{REQUEST_FILENAME}\.gz -s
-    RewriteRule ^(.*js_[a-zA-Z0-9-_])\.js$ $1\.js\.gz [QSA]
+    RewriteRule ^(.*js_[a-zA-Z0-9-_]+)\.js$ $1\.js\.gz [QSA]
 
     # Serve correct content types, and prevent double compression.
     RewriteRule \.css\.gz$ - [T=text/css,E=no-gzip:1,E=no-brotli:1]
@@ -187,11 +178,3 @@ AddEncoding gzip svgz
   # Disable Proxy header, since it's an attack vector.
   RequestHeader unset Proxy
 </IfModule>
-
-# Enable GZIP
-<ifmodule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
-  BrowserMatch ^Mozilla/4 gzip-only-text/html
-  BrowserMatch ^Mozilla/4\.0[678] no-gzip
-  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
-</ifmodule>
